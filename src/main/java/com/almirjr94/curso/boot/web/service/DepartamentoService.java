@@ -14,6 +14,8 @@ public interface DepartamentoService {
 	
 	Departamento buscarPorID(Long id);
 	
-	List<Departamento> buscarTodos(); 
+	List<Departamento> buscarTodos();
+
+	boolean departamentoTemCargos(Long id); 
 	
 }
