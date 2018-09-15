@@ -1,11 +1,11 @@
-package com.almirjr94.curso.boot.web.dao;
+package com.almirjr94.curso.boot.dao;
 
 import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.almirjr94.curso.boot.web.domain.Funcionario;
+import com.almirjr94.curso.boot.domain.Funcionario;
 
 @Repository
 public class FuncionarioDaoImpl extends AbstractDao<Funcionario, Long> implements FuncionarioDao {

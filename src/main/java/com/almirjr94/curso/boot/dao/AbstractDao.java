@@ -1,4 +1,4 @@
-package com.almirjr94.curso.boot.web.dao;
+package com.almirjr94.curso.boot.dao;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;

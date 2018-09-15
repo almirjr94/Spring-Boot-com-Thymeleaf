@@ -1,8 +1,8 @@
-package com.almirjr94.curso.boot.web.service;
+package com.almirjr94.curso.boot.service;
 
 import java.util.List;
 
-import com.almirjr94.curso.boot.web.domain.Cargo;
+import com.almirjr94.curso.boot.domain.Cargo;
 
 public interface CargoService {
 	

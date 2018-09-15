@@ -1,8 +1,8 @@
-package com.almirjr94.curso.boot.web.dao;
+package com.almirjr94.curso.boot.dao;
 
 import org.springframework.stereotype.Repository;
 
-import com.almirjr94.curso.boot.web.domain.Cargo;
+import com.almirjr94.curso.boot.domain.Cargo;
 
 @Repository
 public class CargoDaoImpl extends AbstractDao<Cargo, Long> implements CargoDao {

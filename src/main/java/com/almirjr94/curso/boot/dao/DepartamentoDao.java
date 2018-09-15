@@ -1,8 +1,8 @@
-package com.almirjr94.curso.boot.web.dao;
+package com.almirjr94.curso.boot.dao;
 
 import java.util.List;
 
-import com.almirjr94.curso.boot.web.domain.Departamento;
+import com.almirjr94.curso.boot.domain.Departamento;
 
 public interface DepartamentoDao {
 

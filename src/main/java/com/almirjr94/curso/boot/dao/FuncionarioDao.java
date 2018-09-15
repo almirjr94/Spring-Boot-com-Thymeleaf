@@ -1,9 +1,9 @@
-package com.almirjr94.curso.boot.web.dao;
+package com.almirjr94.curso.boot.dao;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import com.almirjr94.curso.boot.web.domain.Funcionario;
+import com.almirjr94.curso.boot.domain.Funcionario;
 
 public interface FuncionarioDao {
     

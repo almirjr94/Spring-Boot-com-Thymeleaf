@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import com.almirjr94.curso.boot.web.domain.Cargo;
-import com.almirjr94.curso.boot.web.service.CargoService;
+import com.almirjr94.curso.boot.domain.Cargo;
+import com.almirjr94.curso.boot.service.CargoService;
 
 @Component
 public class StringToCargoConversor implements Converter<String, Cargo> {

@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import com.almirjr94.curso.boot.web.domain.Departamento;
-import com.almirjr94.curso.boot.web.service.DepartamentoService;
+import com.almirjr94.curso.boot.domain.Departamento;
+import com.almirjr94.curso.boot.service.DepartamentoService;
 
 @Component
 public class StringToDepartamentoConverter implements Converter<String, Departamento> {

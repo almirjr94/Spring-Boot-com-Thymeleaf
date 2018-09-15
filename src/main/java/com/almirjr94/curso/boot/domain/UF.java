@@ -1,4 +1,4 @@
-package com.almirjr94.curso.boot.web.domain;
+package com.almirjr94.curso.boot.domain;
 
 public enum UF {
 	AC("AC", "Acre"), 

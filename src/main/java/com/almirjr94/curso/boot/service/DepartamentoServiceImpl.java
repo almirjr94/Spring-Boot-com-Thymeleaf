@@ -1,4 +1,4 @@
-package com.almirjr94.curso.boot.web.service;
+package com.almirjr94.curso.boot.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.almirjr94.curso.boot.web.dao.DepartamentoDao;
-import com.almirjr94.curso.boot.web.domain.Departamento;
+import com.almirjr94.curso.boot.dao.DepartamentoDao;
+import com.almirjr94.curso.boot.domain.Departamento;
 
 @Service
 @Transactional(readOnly = false)
