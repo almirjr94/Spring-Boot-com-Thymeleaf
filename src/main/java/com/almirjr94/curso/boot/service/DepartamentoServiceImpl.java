@@ -6,41 +6,41 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.almirjr94.curso.boot.dao.DepartamentoDao;
 import com.almirjr94.curso.boot.domain.Departamento;
+import com.almirjr94.curso.boot.repository.DepartamentoRepository;
 
 @Service
 @Transactional(readOnly = false)
 public class DepartamentoServiceImpl implements DepartamentoService {
 
 	@Autowired
-	private DepartamentoDao dao;
+	private DepartamentoRepository departamentoRepository;
 
 	@Override
 	public void salvar(Departamento departamento) {
-		dao.save(departamento);
+		departamentoRepository.save(departamento);
 	}
 
 	@Override
 	public void editar(Departamento departamento) {
-		dao.update(departamento);
+		departamentoRepository.save(departamento);
 	}
 
 	@Override
 	public void excluir(Long id) {
-		dao.delete(id);
+		departamentoRepository.deleteById(id);
 	}
 
 	@Override
 	@Transactional(readOnly = true)
 	public Departamento buscarPorID(Long id) {
-		return dao.findById(id);
+		return departamentoRepository.findById(id).get();
 	}
 
 	@Override
 	@Transactional(readOnly = true)
 	public List<Departamento> buscarTodos() {
-		return dao.findAll();
+		return departamentoRepository.findAll();
 	}
 
 	@Override

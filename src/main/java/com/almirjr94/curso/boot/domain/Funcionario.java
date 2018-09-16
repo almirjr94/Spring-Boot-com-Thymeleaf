@@ -26,7 +26,7 @@ import org.springframework.format.annotation.NumberFormat.Style;
 public class Funcionario extends AbstractEntity<Long> {
 
 	@NotBlank
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private String nome;
 	
 	@NotNull
