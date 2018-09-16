@@ -44,20 +44,20 @@ public class FuncionarioController {
 
 	@GetMapping("/cadastrar")
 	public String cadastrar(Funcionario funcionario) {
-		return "/funcionario/cadastro";
+		return "funcionario/cadastro";
 	}
 
 	@GetMapping("/listar")
 	public String listar(ModelMap model) {
 		model.addAttribute("funcionarios", funcionarioService.buscarTodos());
-		return "/funcionario/lista";
+		return "funcionario/lista";
 	}
 
 	@PostMapping("/salvar")
 	public String salvar(@Valid Funcionario funcionario, BindingResult result ,RedirectAttributes attr) {
 		
 		if(result.hasErrors()) {
-			return "/funcionario/cadastro";
+			return "funcionario/cadastro";
 		}
 		
 		funcionarioService.salvar(funcionario);
@@ -68,14 +68,14 @@ public class FuncionarioController {
 	@GetMapping("/editar/{id}")
 	public String preEditar(@PathVariable("id") Long id, ModelMap model) {
 		model.addAttribute("funcionario", funcionarioService.buscarPorID(id));
-		return "/funcionario/cadastro";
+		return "funcionario/cadastro";
 	}
 
 	@PostMapping("/editar")
 	public String editar(@Valid Funcionario funcionario, BindingResult result,RedirectAttributes attr) {
 		
 		if(result.hasErrors()) {
-			return "/funcionario/cadastro";
+			return "funcionario/cadastro";
 		}
 		
 		funcionarioService.editar(funcionario);
